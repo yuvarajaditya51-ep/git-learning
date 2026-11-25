@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Registration Form</title>
+</head>
+<body>
+
+  <div class="event-container">
+    <!-- Event Header -->
+    <h1>Event Name</h1>
+
+    <!-- Registration Form -->
+    <form action="/submit" method="POST" enctype="multipart/form-data">
+      
+      <div>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <br>
+
+      <div>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <br>
+
+      <div>
+        <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      <br>
+
+      <div>
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required>
+      </div>
+      <br>
+
+      <div>
+        <label for="payment">Payment File:</label><br>
+        <input type="file" id="payment" name="payment" accept="image/*,.pdf" required>
+      </div>
+      <br>
+
+      <div>
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+      </div>
+      <br>
+
+      <div>
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="3" cols="30"></textarea>
+      </div>
+      <br>
+
+      <div>
+        <input type="checkbox" id="confirmation" name="confirmation" required>
+        <label for="confirmation">I confirm that the above details are correct</label>
+      </div>
+      <br>
+
+      <div>
+        <label>Food Preference:</label><br>
+        <input type="radio" id="veg" name="food" value="veg" checked>
+        <label for="veg">Veg</label>
+        <input type="radio" id="nonveg" name="food" value="nonveg">
+        <label for="nonveg">Non-Veg</label>
+      </div>
+      <br>
+
+      <!-- Buttons -->
+      <div>
+        <button type="submit">Sub</button>
+        <button type="reset">Reset</button>
+      </div>
+
+    </form>
+  </div>
+
+</body>
+</html>
